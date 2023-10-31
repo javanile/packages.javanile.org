@@ -4,5 +4,5 @@
 
 title: Javanile Packages
 url: https://packages.javanile.org
-remote_theme: javanile/package-manager@main
+#remote_theme: javanile/package-manager@main
 primary_color: "#2C842C"
