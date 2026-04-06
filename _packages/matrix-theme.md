@@ -1,5 +1,7 @@
 ---
 name: matrix-theme
-description: ""
+description: "(no description)"
 github: https://github.com/francescobianco/matrix-theme.git
+versions:
+  - main
 ---

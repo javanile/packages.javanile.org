@@ -1,5 +1,7 @@
 ---
 name: tpkg
-description: ""
+description: "(no description)"
 github: https://github.com/francescobianco/tpkg.git
+versions:
+  - main
 ---
