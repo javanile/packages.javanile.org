@@ -1,3 +1,6 @@
+.idea/
+.vscode/
+.bundles_cache/
 _site/
 .sass-cache/
 .jekyll-cache/

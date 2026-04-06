@@ -14,9 +14,17 @@ _config.dev.yml:
 serve: Gemfile _config_dev.yml
 	@mkdir -p ".bundles_cache"
 	@docker run --rm -it \
-		-v "$$PWD:/srv/jekyll" \
-		-w "/srv/jekyll" \
-		-e BUNDLE_PATH="/srv/jekyll/.bundles_cache" \
+		-v $$PWD:/srv/jekyll \
+		-v $$PWD/.bundles_cache:/tmp/.bundles_cache \
+		-e BUNDLE_PATH=/tmp/.bundles_cache \
 		-p 4000:4000 \
-		ruby:3-alpine \
-		sh -c "gem install bundler && bundle install && bundle exec jekyll serve --host 0.0.0.0 --verbose --config _config.yml,_config_dev.yml"
+		jekyll/builder:3.8 bash -c "\
+			chmod 777 \$$BUNDLE_PATH && \
+			gem install bundler -v 2.4.22 && bundle install && \
+			bundle exec jekyll serve --host 0.0.0.0 --verbose --config _config.yml,_config_dev.yml"
+
+dev-push:
+	@git config credential.helper 'cache --timeout=3600'
+	@git add .
+	@git commit -am "Dev release"
+	@git push
