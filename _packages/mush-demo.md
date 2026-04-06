@@ -1,5 +1,6 @@
 ---
 name: mush-demo
+title: mush-demo
 description: "(no description)"
 github: https://github.com/francescobianco/mush-demo
 repository: https://github.com/francescobianco/mush-demo

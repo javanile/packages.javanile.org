@@ -1,5 +1,6 @@
 ---
 name: my
+title: my
 description: "Ridiculously Simple CLI for Host Management"
 github: https://github.com/francescobianco/my
 repository: https://github.com/francescobianco/my

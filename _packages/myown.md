@@ -1,5 +1,6 @@
 ---
 name: myown
+title: myown
 description: "(no description)"
 github: https://github.com/francescobianco/myown
 repository: https://github.com/francescobianco/myown

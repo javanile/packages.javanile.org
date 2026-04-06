@@ -1,5 +1,6 @@
 ---
 name: speedtest
+title: speedtest
 description: "(no description)"
 github: https://github.com/francescobianco/mush-packages.git
 repository: https://github.com/francescobianco/mush-packages/tree/main/packages/speedtest

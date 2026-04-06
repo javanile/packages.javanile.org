@@ -1,5 +1,6 @@
 ---
 name: convcommit
+title: convcommit
 description: "Interactive conventionl commit for CLI workflow"
 github: https://github.com/francescobianco/convcommit
 repository: https://github.com/francescobianco/convcommit

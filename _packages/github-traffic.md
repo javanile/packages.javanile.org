@@ -1,5 +1,6 @@
 ---
 name: github-traffic
+title: github-traffic
 description: "(no description)"
 github: https://github.com/francescobianco/mush-packages.git
 repository: https://github.com/francescobianco/mush-packages/tree/main/packages/github-traffic

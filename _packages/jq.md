@@ -1,5 +1,6 @@
 ---
 name: jq
+title: jq
 description: "(no description)"
 github: https://github.com/francescobianco/mush-index
 repository: https://github.com/francescobianco/mush-index/tree/main/packages/j/jq

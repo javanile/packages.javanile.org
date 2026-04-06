@@ -1,5 +1,6 @@
 ---
 name: demo-lib
+title: demo-lib
 description: "(no description)"
 github: https://github.com/francescobianco/mush-packages.git
 repository: https://github.com/francescobianco/mush-packages/tree/main/packages/demo-lib

@@ -1,5 +1,6 @@
 ---
 name: code_dumper
+title: code_dumper
 description: "Code inspection utilities"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/code_dumper

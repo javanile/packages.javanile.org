@@ -1,5 +1,6 @@
 ---
 name: linkedin.sh
+title: linkedin.sh
 description: "(no description)"
 github: https://github.com/francescobianco/linkedin.sh.git
 repository: https://github.com/francescobianco/linkedin.sh

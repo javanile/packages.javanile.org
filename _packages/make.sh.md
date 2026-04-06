@@ -1,5 +1,6 @@
 ---
 name: make.sh
+title: make.sh
 description: "(no description)"
 github: https://github.com/francescobianco/make.sh.git
 repository: https://github.com/francescobianco/make.sh

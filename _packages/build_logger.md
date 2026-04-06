@@ -1,5 +1,6 @@
 ---
 name: build_logger
+title: build_logger
 description: "Build process logging"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/build_logger

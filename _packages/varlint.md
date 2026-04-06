@@ -1,5 +1,6 @@
 ---
 name: varlint
+title: varlint
 description: "(no description)"
 github: https://github.com/francescobianco/varlint.git
 repository: https://github.com/francescobianco/varlint

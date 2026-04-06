@@ -1,5 +1,6 @@
 ---
 name: console
+title: console
 description: "Rush-style console output"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/console

@@ -1,5 +1,6 @@
 ---
 name: getoptions
+title: getoptions
 description: "Option parsing support"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/getoptions

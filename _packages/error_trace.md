@@ -1,5 +1,6 @@
 ---
 name: error_trace
+title: error_trace
 description: "Error handling framework"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/error_trace

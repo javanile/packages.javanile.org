@@ -1,5 +1,6 @@
 ---
 name: shellcheckhelper
+title: shellcheckhelper
 description: "ShellCheck helper plugin"
 github: https://github.com/francescobianco/mush-plugins
 repository: https://github.com/francescobianco/mush-plugins/tree/main/packages/shellcheckhelper

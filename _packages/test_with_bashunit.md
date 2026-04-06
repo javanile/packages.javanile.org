@@ -1,5 +1,6 @@
 ---
 name: test_with_bashunit
+title: test_with_bashunit
 description: "Bashunit testing framework"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/test_with_bashunit

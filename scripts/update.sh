@@ -79,6 +79,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
     {
         echo "---"
         echo "name: ${name}"
+        echo "title: ${name}"
         echo "description: \"${description}\""
         echo "github: ${github}"
         echo "repository: ${repository}"

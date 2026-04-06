@@ -1,5 +1,6 @@
 ---
 name: openapi-token-manager
+title: openapi-token-manager
 description: "(no description)"
 github: https://github.com/francescobianco/openapi-token-manager.git
 repository: https://github.com/francescobianco/openapi-token-manager

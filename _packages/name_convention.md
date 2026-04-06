@@ -1,5 +1,6 @@
 ---
 name: name_convention
+title: name_convention
 description: "Name convention for shell projects"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush/tree/main/packages/name_convention

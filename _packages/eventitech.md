@@ -1,5 +1,6 @@
 ---
 name: eventitech
+title: eventitech
 description: "(no description)"
 github: https://github.com/francescobianco/eventitech
 repository: https://github.com/francescobianco/eventitech

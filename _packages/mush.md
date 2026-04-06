@@ -1,5 +1,6 @@
 ---
 name: mush
+title: mush
 description: "(no description)"
 github: https://github.com/javanile/mush.git
 repository: https://github.com/javanile/mush
