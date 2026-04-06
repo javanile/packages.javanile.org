@@ -7,8 +7,9 @@ tagline: Official Javanile Software Registry
 url: https://packages.javanile.org
 remote_theme: javanile/package-manager@main
 primary_color: "#2C842C"
+enable_dark_theme: false
 
-suggested_command: "bpkg install {package}"
+suggested_command: "mush install {package}"
 
 defaults:
   - scope: { path: "" }
