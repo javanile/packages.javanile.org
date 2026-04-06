@@ -1,11 +1,39 @@
 #!/bin/bash
 
 INDEX_FILE=".mush/registry/index/github-javanile-mush.index"
+CATEGORIES_MAP="categories.map"
 PACKAGES_DIR="_packages"
 CACHE_DIR=".packages_cache"
 
 mkdir -p "$PACKAGES_DIR"
 mkdir -p "$CACHE_DIR"
+
+# load categories map: associative array category -> keywords
+declare -A CATEGORY_KEYWORDS
+while IFS= read -r mapline || [[ -n "$mapline" ]]; do
+    [[ -z "$mapline" || "$mapline" =~ ^[[:space:]]*# ]] && continue
+    cat_name=$(echo "$mapline" | cut -d: -f1 | tr -d '[:space:]')
+    cat_keywords=$(echo "$mapline" | cut -d: -f2-)
+    [[ -n "$cat_name" ]] && CATEGORY_KEYWORDS["$cat_name"]="$cat_keywords"
+done < "$CATEGORIES_MAP"
+
+# match a package name+description against categories, return space-separated list
+match_categories() {
+    local pkg_name="$1"
+    local pkg_desc="$2"
+    local haystack
+    haystack=$(echo "${pkg_name} ${pkg_desc}" | tr '[:upper:]' '[:lower:]')
+    local matched=()
+    for cat in "${!CATEGORY_KEYWORDS[@]}"; do
+        for kw in ${CATEGORY_KEYWORDS[$cat]}; do
+            if [[ "$haystack" == *"$kw"* ]]; then
+                matched+=("$cat")
+                break
+            fi
+        done
+    done
+    echo "${matched[@]}"
+}
 
 while IFS= read -r line || [[ -n "$line" ]]; do
     # skip empty lines and comment-only lines
@@ -65,6 +93,15 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         readme_url="${raw_base}/main/README.md"
     fi
 
+    # match categories from categories.map
+    matched_cats=$(match_categories "$name" "$description")
+
+    # build YAML categories array
+    categories_yaml=""
+    for cat in $matched_cats; do
+        categories_yaml="${categories_yaml}  - ${cat}"$'\n'
+    done
+
     # extract versions list (lines after "Versions:" that start with " - ")
     versions=$(echo "$info" | awk '/^Versions:/{found=1; next} found && /^ - /{print}' \
         | sed 's/^[[:space:]]*-[[:space:]]*//')
@@ -87,6 +124,10 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         echo "readme: ${readme_url}"
         [[ -n "$path" ]] && echo "path: ${path}"
         [[ -n "$subpath" ]] && echo "subpath: ${subpath}"
+        if [[ -n "$categories_yaml" ]]; then
+            echo "categories:"
+            echo -n "$categories_yaml"
+        fi
         if [[ -n "$versions_yaml" ]]; then
             echo "versions:"
             echo -n "$versions_yaml"

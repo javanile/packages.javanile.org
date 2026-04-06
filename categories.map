@@ -1,0 +1,6 @@
+
+system: os
+shell: .sh shell -sh
+git: git commit github traffic changes
+testing: test lint check fake bashunit shellcheck
+network: port speed network
