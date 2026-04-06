@@ -2,6 +2,7 @@
 .vscode/
 .mush/
 .bundles_cache/
+.packages_cache/
 _site/
 .sass-cache/
 .jekyll-cache/

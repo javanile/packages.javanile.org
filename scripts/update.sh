@@ -2,8 +2,10 @@
 
 INDEX_FILE=".mush/registry/index/github-javanile-mush.index"
 PACKAGES_DIR="_packages"
+CACHE_DIR=".packages_cache"
 
 mkdir -p "$PACKAGES_DIR"
+mkdir -p "$CACHE_DIR"
 
 while IFS= read -r line || [[ -n "$line" ]]; do
     # skip empty lines and comment-only lines
@@ -14,8 +16,16 @@ while IFS= read -r line || [[ -n "$line" ]]; do
 
     echo -n "Processing: ${name} ... "
 
-    # run mush info and strip ANSI escape codes
-    info=$(MUSH_HOME=$PWD/.mush mush info "$name" 2>&1 | sed 's/\x1b\[[0-9;]*m//g')
+    mkdir -p "${CACHE_DIR}/${name}"
+
+    # run mush info with cache
+    info_cache="${CACHE_DIR}/${name}/info.txt"
+    if [[ -f "$info_cache" ]]; then
+        info=$(cat "$info_cache")
+    else
+        info=$(MUSH_HOME=$PWD/.mush mush info "$name" 2>&1 | sed 's/\x1b\[[0-9;]*m//g')
+        echo "$info" > "$info_cache"
+    fi
 
     # extract fields from mush info output
     github=$(echo "$info" | grep '^Repo:' | sed 's/^Repo:[[:space:]]*//')
@@ -82,7 +92,15 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         fi
         echo "---"
         echo ""
-        curl -fsSL "${readme_url}" 2>/dev/null || true
+        # fetch README with cache
+        readme_cache="${CACHE_DIR}/${name}/README.md"
+        if [[ -f "$readme_cache" ]]; then
+            cat "$readme_cache"
+        else
+            readme_content=$(curl -fsSL "${readme_url}" 2>/dev/null || true)
+            echo "$readme_content" > "$readme_cache"
+            echo "$readme_content"
+        fi
     } > "$PACKAGES_DIR/${name}.md"
 
     echo "done"
