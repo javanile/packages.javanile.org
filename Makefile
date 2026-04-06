@@ -26,5 +26,5 @@ serve: Gemfile _config_dev.yml
 dev-push:
 	@git config credential.helper 'cache --timeout=3600'
 	@git add .
-	@git commit -am "Dev release"
+	@git commit -am "Dev release" || true
 	@git push
