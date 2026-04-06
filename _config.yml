@@ -7,3 +7,17 @@ tagline: Official Javanile Software Registry
 url: https://packages.javanile.org
 remote_theme: javanile/package-manager@main
 primary_color: "#2C842C"
+
+suggested_command: "bpkg install {package}"
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "default" }
+
+collections:
+  packages:
+    output: true
+    permalink: /:collection/:name
+  categories:
+    output: true
+    permalink: /:collection/:name
