@@ -7,7 +7,7 @@ Gemfile:
 	@echo 'gem "jekyll-include-cache"' >> Gemfile
 
 .PHONY: _config_dev.yml
-_config.dev.yml:
+_config_dev.yml:
 	@echo 'baseurl: ""' > _config_dev.yml
 	@echo 'repository: "javanile/packages.javanile.org"' >> _config_dev.yml
 

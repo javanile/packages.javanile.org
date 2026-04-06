@@ -3,7 +3,7 @@
 ##
 
 title: Javanile Packages
-tagline: Officile Javanile Registry
+tagline: Official Javanile Software Registry
 url: https://packages.javanile.org
 remote_theme: javanile/package-manager@main
 primary_color: "#2C842C"
