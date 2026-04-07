@@ -8,6 +8,8 @@ author_github: javanile
 readme: https://raw.githubusercontent.com/javanile/mush/main/packages/test_with_bashunit/README.md
 path: packages/test_with_bashunit
 subpath: packages/test_with_bashunit
+categories:
+  - testing
 versions:
   - develop
   - main

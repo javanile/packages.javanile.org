@@ -8,6 +8,9 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/mush-packages/main/packages/speedtest/README.md
 path: packages/speedtest
 subpath: packages/speedtest
+categories:
+  - network
+  - testing
 versions:
   - main
   - 0.1.0

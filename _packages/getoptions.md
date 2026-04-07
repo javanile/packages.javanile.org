@@ -8,6 +8,8 @@ author_github: javanile
 readme: https://raw.githubusercontent.com/javanile/mush/main/packages/getoptions/README.md
 path: packages/getoptions
 subpath: packages/getoptions
+categories:
+  - network
 versions:
   - develop
   - main

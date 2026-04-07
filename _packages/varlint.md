@@ -6,6 +6,8 @@ github: https://github.com/francescobianco/varlint.git
 repository: https://github.com/francescobianco/varlint
 author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/varlint/main/README.md
+categories:
+  - testing
 versions:
   - main
 ---

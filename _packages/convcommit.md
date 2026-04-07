@@ -6,6 +6,8 @@ github: https://github.com/francescobianco/convcommit
 repository: https://github.com/francescobianco/convcommit
 author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/convcommit/main/README.md
+categories:
+  - git
 versions:
   - main
   - test

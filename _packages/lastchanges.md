@@ -6,6 +6,9 @@ github: https://github.com/francescobianco/lastchanges
 repository: https://github.com/francescobianco/lastchanges
 author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/lastchanges/main/README.md
+categories:
+  - git
+  - system
 versions:
   - main
   - 0.1.0

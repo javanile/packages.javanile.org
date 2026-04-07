@@ -8,6 +8,8 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/mush-packages/main/packages/github-traffic/README.md
 path: packages/github-traffic
 subpath: packages/github-traffic
+categories:
+  - git
 versions:
   - main
   - 0.1.0

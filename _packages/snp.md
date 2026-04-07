@@ -8,6 +8,9 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/sev-utils/main/packages/snp/README.md
 path: packages/snp
 subpath: packages/snp
+categories:
+  - system
+  - testing
 versions:
   - main
 ---

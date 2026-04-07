@@ -8,6 +8,8 @@ author_github: javanile
 readme: https://raw.githubusercontent.com/javanile/mush/main/packages/name_convention/README.md
 path: packages/name_convention
 subpath: packages/name_convention
+categories:
+  - shell
 versions:
   - develop
   - main

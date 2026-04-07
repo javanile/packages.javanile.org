@@ -6,6 +6,8 @@ github: https://github.com/francescobianco/linkedin.sh.git
 repository: https://github.com/francescobianco/linkedin.sh
 author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/linkedin.sh/main/README.md
+categories:
+  - shell
 versions:
   - main
 ---

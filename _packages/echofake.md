@@ -8,6 +8,8 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/mush-packages/main/packages/echofake/README.md
 path: packages/echofake
 subpath: packages/echofake
+categories:
+  - testing
 versions:
   - main
   - 0.1.0

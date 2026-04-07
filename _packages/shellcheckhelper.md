@@ -8,6 +8,9 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/mush-plugins/main/packages/shellcheckhelper/README.md
 path: packages/shellcheckhelper
 subpath: packages/shellcheckhelper
+categories:
+  - shell
+  - testing
 versions:
   - main
 ---

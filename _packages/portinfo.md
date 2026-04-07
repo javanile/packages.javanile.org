@@ -8,6 +8,8 @@ author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/mush-packages/main/packages/portinfo/README.md
 path: packages/portinfo
 subpath: packages/portinfo
+categories:
+  - network
 versions:
   - main
   - 0.1.0

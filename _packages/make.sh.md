@@ -6,6 +6,8 @@ github: https://github.com/francescobianco/make.sh.git
 repository: https://github.com/francescobianco/make.sh
 author_github: francescobianco
 readme: https://raw.githubusercontent.com/francescobianco/make.sh/main/README.md
+categories:
+  - shell
 versions:
   - main
 ---
